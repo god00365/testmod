@@ -15,7 +15,7 @@ def http_get(image):
 
 
 
-for i in range(0, 10):#how many access?
+for i in range(0, 5):#how many access?
 
 	start1 = time.time()
 
