@@ -3,7 +3,7 @@ import urllib2
 import time
 from datetime import datetime
 
-proxy_support = urllib2.ProxyHandler({"http" : "127.0.0.1:8118"})
+proxy_support = urllib2.ProxyHandler({"http" : "127.0.0.1:6789"})
 #need to port setting
 opener = urllib2.build_opener(proxy_support) 
 
@@ -14,12 +14,7 @@ request.add_header('Cache-Control', 'no-cache')
 urllib2.install_opener(opener)
 opened = urllib2.build_opener(proxy_support)
     
-
-
 text = open("basetime.txt",'a')
-
-
-
 
 for i in range(0, 5):#how many access?
    
