@@ -46,6 +46,9 @@ for i in range(0, 5):#how many access?
 
 	
 	res = end2 - start1
+	pool.close()
+	time.sleep(1.5)
 	
+
 	text.write("%s\n" % (res))
 	
