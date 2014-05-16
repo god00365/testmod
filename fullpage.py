@@ -21,7 +21,7 @@ for i in range(0, 5):#how many access?
 
 	headers = {'cache-control':'no-cache'}
 	proxies = {"http":"http://127.0.0.1:6789",}#portcontrol
-	website = requests.get('http://en.wikipedia.org/wiki/Main_Page', headers=headers)
+	website = requests.get('http://en.wikipedia.org/wiki/Main_Page', headers=headers,proxies=proxies)
 
 
 	html = website.text
